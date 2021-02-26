@@ -1,0 +1,26 @@
+.nav {
+    width: 100%;
+    padding: 0 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav p{
+    font-size: 1.2rem;
+}
+
+.nav p:hover{
+    color: #274C77;
+    transition: .3s ease;
+}
+
+.logo-container {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
