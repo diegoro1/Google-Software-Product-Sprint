@@ -1,6 +1,8 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
 import './Home.css';
 import video from './../../assets/home-vid.mp4';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 export default function Home() {
     return (
@@ -11,14 +13,13 @@ export default function Home() {
                 <source src={video} type='video/mp4' />
             </video>
             
-            
-            <div className="home-container">
-                <div className="content-box">
-                    <h1>Hi, I'm Diego!</h1>
-                    <h2>A Web developer foncused on writting</h2>
-                    <h2> clean, efficient, and beautiful code</h2>
-                    <div className="avatar"></div>
-                </div>
+            <h1 className="top-item">Hello, I am a</h1>
+            <h1 className="middle-item">Software Developer</h1>
+            <h1 className="">focused on making clean, efficient, and beautiful code</h1>
+
+            <div className="scrow-down-container">
+                <p>Scrow down</p>
+                <KeyboardArrowDownIcon style={{ color: 'white' }}/>
             </div>
         </div>
     );

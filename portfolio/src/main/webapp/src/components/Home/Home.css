@@ -1,14 +1,3 @@
-.home-container {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 1;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .video-overlay {
     position: absolute;
     z-index: -1;
@@ -33,20 +22,32 @@
     transform: translate(-50%, -50%);
 }
 
-.content-box {
-    background-color: #E7ECEF;
-    padding: 5rem;
-    border-radius: 12px;
+h1 {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.top-item {
+    margin-top: 10%;
+}
+
+h1.middle-item {
+    margin: 2rem 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+}
+
+.scrow-down-container {
+    color: white;
+    margin-top: 20vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.content-box h1 {
-    font-size: 1.8rem;
-}
-
-.content-box h2 {
-    font-size: 1.1rem;
+    align-items: center;
 }
