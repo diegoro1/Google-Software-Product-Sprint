@@ -1,0 +1,33 @@
+.bg {
+    position: relative;
+    background-image: linear-gradient(#6096BA, #274C77);
+    clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+    );
+}
+
+.space-above {padding-top: 5rem; padding-bottom: 5rem;}
+
+.content-container{
+    background-color: #E7ECEF;
+    padding: 2rem;
+    margin-bottom: 160px;
+}
+
+.my-picture {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.about-box {
+    text-align: justify;
+    margin-top: 20px;
+}
