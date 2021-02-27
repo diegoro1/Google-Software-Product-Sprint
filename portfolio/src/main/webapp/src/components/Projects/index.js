@@ -5,9 +5,11 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
 import lpaImg from '../../assets/lpa.jpg';
+import pl0Img from '../../assets/pl0.jpg';
 import clippyImg from '../../assets/clippy.png';
 import bobRossImg from '../../assets/bobross.png';
 import skipListImg from '../../assets/skiplist.jpg';
+import transcribeImg from '../../assets/transcriber.jpeg';
 
 // hard coded project data to be sent to Card component
 const clippy = {
@@ -31,16 +33,16 @@ const skipList = {
     tech: ["Java"],
 };
 
-const plo = {
+const pl0 = {
     title: "PL0 Compiler",
-    img: lpaImg,
+    img: pl0Img,
     description: "A Pascal like programming lanaguage with basic features. Includes everything a regular compiler has including: a lexicographical analyzer, parser, and a virtual machine.",
     tech: ["C"],
 };
 
 const transcriber = {
     title: "Transcriber",
-    img: undefined,
+    img: transcribeImg,
     description: "A Command line application developed in python that transcribes .wav into .txt files for data analysis",
     tech: ["Python"],
 };
@@ -66,6 +68,12 @@ export default function Projects() {
                     </Grid>
                     <Grid item xs={12}>
                         <Card project={skipList}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Card project={pl0}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Card project={transcriber}/>
                     </Grid>
                     <Grid item xs={12}>
                         <Card project={lpa}/>
