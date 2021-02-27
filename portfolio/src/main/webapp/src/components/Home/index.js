@@ -18,7 +18,7 @@ export default function Home() {
             <h1 className="">focused on making clean, efficient, and beautiful code</h1>
 
             <div className="scrow-down-container">
-                <p>Scrow down</p>
+                <p>Scroll down</p>
                 <KeyboardArrowDownIcon style={{ color: 'white' }}/>
             </div>
         </div>

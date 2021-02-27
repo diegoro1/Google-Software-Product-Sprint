@@ -56,7 +56,7 @@ const lpa = {
 
 export default function Projects() {
     return (
-        <div>
+        <div className="projects-container">
             <Container maxWidth="md">
                 <h1 className="title-projects">Projects</h1>
                 <Grid container spacing={6} justify="center">
