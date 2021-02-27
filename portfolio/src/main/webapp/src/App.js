@@ -1,6 +1,7 @@
 import React from 'react'; 
 import About from './components/About';
 import HomePage from './components/HomePage';
+import Projects from './components/Projects';
 import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 
@@ -9,6 +10,7 @@ function App() {
     <div>
         <HomePage />
         <About />
+        <Projects />
     </div>
   );
 }
