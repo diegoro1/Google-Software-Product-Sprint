@@ -4,8 +4,10 @@ import './About.css';
 
 export default function About() {
     return (
-        <Container>
-            <p>Hello</p>
-        </Container>
+        <div className="bg">
+            <Container maxWidth="md">
+                <p>Hello</p>
+            </Container>
+        </div>
     );
 }
