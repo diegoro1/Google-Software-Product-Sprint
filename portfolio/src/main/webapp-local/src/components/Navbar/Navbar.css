@@ -27,12 +27,12 @@
     display: none;
 }
 
-.nav p{
+.nav .nav-link{
     font-size: 1.2rem;
     cursor: pointer;
 }
 
-.nav p:hover{
+.nav .nav-link:hover{
     color: rgba(255,255,255,0.5);
     transition: .3s ease;
 }

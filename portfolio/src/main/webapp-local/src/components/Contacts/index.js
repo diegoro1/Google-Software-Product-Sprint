@@ -7,7 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function Contacts() {
     return (
-        <div className="contacts-container">
+        <div className="contacts-container" id="contacts">
             <Container maxWidth="md">
                 <h1 className="contact-title">Contact Me</h1>
                 <p className="contact-text">Let's collaborate and make the internet a prettier place.</p>

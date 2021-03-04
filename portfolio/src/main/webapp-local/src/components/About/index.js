@@ -6,7 +6,7 @@ import './About.css';
 
 export default function About() {
     return (
-        <div className="bg space-above">
+        <div className="bg space-above" id="about">
             <Container maxWidth="md">
                 <div className="content-container">
                     <Grid container spacing={4} justify="center">
