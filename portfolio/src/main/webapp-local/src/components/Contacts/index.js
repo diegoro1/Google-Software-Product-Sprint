@@ -11,10 +11,21 @@ export default function Contacts() {
     // fetches data from '/random-string' servlet to replace message string
     const setRandomString = async () => {
         const response = await fetch('/random-string');
-        const textFromResponse = await response.text();
+        const quotes = await response.json();
+        const length = Object.keys(quotes).length;
 
-        setMessage(textFromResponse);
-    }
+        const quote = randomQuoteGenerator(quotes, length);
+
+        // resets message to then place new quote
+        setMessage("");
+        setMessage(quote);
+    };
+
+    // returns a random quote from quote object
+    const randomQuoteGenerator = (quotes, length) => {
+        const index = Math.floor(Math.random() * length);
+        return quotes[index];
+    };
 
     return (
         <div className="contacts-container" id="contacts">
