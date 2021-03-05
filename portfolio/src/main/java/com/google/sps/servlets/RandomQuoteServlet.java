@@ -32,8 +32,8 @@ public class RandomQuoteServlet extends HttpServlet {
     }
 
     private String convertToJsonUsingGson(ArrayList<String> quotes) {
-    Gson gson = new Gson();
-    String json = gson.toJson(quotes);
-    return json;
-  }
+        Gson gson = new Gson();
+        String json = gson.toJson(quotes);
+        return json;
+    }
 }
