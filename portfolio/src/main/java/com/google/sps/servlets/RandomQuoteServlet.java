@@ -19,9 +19,9 @@ public class RandomQuoteServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         // pushing hard coded quotes
-        quotes.add("\"You’re off to great places, today is your day. Your mountain is waiting, so get on your way.\" - Dr. Seuss");
+        quotes.add("\"You're off to great places, today is your day. Your mountain is waiting, so get on your way.\" - Dr. Seuss");
         quotes.add("\"It always seems impossible until it is done.\" - Nelson Mandela");
-        quotes.add("\"Winning doesn’t always mean being first. Winning means you’re doing better than you’ve done before.\" - Bonnie Blair");
+        quotes.add("\"Winning doesn't always mean being first. Winning means you're doing better than you've done before.\" - Bonnie Blair");
 
         // Converts quotes list to json using Gson
         String json = convertToJsonUsingGson(quotes);
