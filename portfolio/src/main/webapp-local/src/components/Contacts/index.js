@@ -7,15 +7,15 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function Contacts() {
     return (
-        <div className="contacts-container">
+        <div className="contacts-container" id="contacts">
             <Container maxWidth="md">
                 <h1 className="contact-title">Contact Me</h1>
                 <p className="contact-text">Let's collaborate and make the internet a prettier place.</p>
                 <p className="contact-text">Find me here</p>
                 <div className="contact-links">
-                    <InstagramIcon className="icon" fontSize="large" style={{fill: "white"}}/>
-                    <LinkedInIcon className="icon" fontSize="large" style={{fill: "white"}}/>
-                    <GitHubIcon className="icon" fontSize="large" style={{fill: "white"}}/>
+                    <a href="https://www.instagram.com/thediegorodrigues/"><InstagramIcon className="icon" fontSize="large" style={{fill: "white"}}/></a>
+                    <a href="https://www.linkedin.com/in/rodrigues-diego"><LinkedInIcon className="icon" fontSize="large" style={{fill: "white"}}/></a>
+                    <a href="https://github.com/diegoro1"><GitHubIcon className="icon" fontSize="large" style={{fill: "white"}}/></a>
                 </div>
             </Container>
         </div>

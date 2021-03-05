@@ -56,26 +56,26 @@ const lpa = {
 
 export default function Projects() {
     return (
-        <div className="projects-container">
+        <div className="projects-container" id="projects">
             <Container maxWidth="md">
                 <h1 className="title-projects">Projects</h1>
-                <Grid container spacing={6} justify="center">
+                <Grid container justify="center">
                     <Grid item xs={12}>
                         <Card project={clippy}/>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid className="item" item xs={12}>
                         <Card project={bobRoss}/>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid className="item" item xs={12}>
                         <Card project={skipList}/>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid className="item" item xs={12}>
                         <Card project={pl0}/>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid className="item" item xs={12}>
                         <Card project={transcriber}/>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid className="item" item xs={12}>
                         <Card project={lpa}/>
                     </Grid>
                 </Grid>

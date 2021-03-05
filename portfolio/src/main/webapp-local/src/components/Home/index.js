@@ -11,7 +11,7 @@ export default function Home() {
 
             <video className='video' autoPlay loop muted>
                 <source src={video} type='video/mp4' />
-            </video>
+             </video>
             
             <h1 className="top-item">Hello, I am a</h1>
             <h1 className="middle-item">Software Developer</h1>
