@@ -67,3 +67,15 @@
 .random-button:hover {
     transform: translateY(-5px);
 }
+
+.message-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    padding: 20px 60px;
+    background-color: #E7ECEF;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
