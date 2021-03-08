@@ -16,8 +16,6 @@ export default function Contacts() {
 
         const quote = randomQuoteGenerator(quotes, length);
 
-        // resets message to then place new quote
-        setMessage("");
         setMessage(quote);
     };
 
@@ -42,6 +40,10 @@ export default function Contacts() {
                     <button className="random-button" onClick={setRandomString}>Random</button>
                 </div>
                 <div className="message-wrapper">
+                    {/* 
+                        If the state of message is empty, then the div will be classless and not show
+                        else, a class of "message" will be assigned and the div will be displayed 
+                    */}
                     <div className={(message === "")? "" : "message"}>{message}</div>
                 </div>
             </Container>
