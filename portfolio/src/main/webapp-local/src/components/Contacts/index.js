@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Contacts.css';
+import ContactForm from '../ContactForm';
 import Container from '@material-ui/core/Container';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -36,6 +37,7 @@ export default function Contacts() {
                     <a href="https://www.linkedin.com/in/rodrigues-diego"><LinkedInIcon className="icon" fontSize="large" style={{fill: "white"}}/></a>
                     <a href="https://github.com/diegoro1"><GitHubIcon className="icon" fontSize="large" style={{fill: "white"}}/></a>
                 </div>
+                <ContactForm />
                 <div className="button-container">
                     <button className="random-button" onClick={setRandomString}>Random</button>
                 </div>
