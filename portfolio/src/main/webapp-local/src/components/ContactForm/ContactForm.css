@@ -54,3 +54,7 @@ textarea {
 .submit-btn:focus {
     outline: none;
 }
+
+#dummyframe {
+    display: none;
+}
