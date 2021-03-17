@@ -53,7 +53,7 @@ public class FormHandlerServlet extends HttpServlet {
         datastore.put(contactEntity);
     }
 
-    // checks if data submitted is not null and larger than 5 characters
+    // checks if data submitted is not null and larger than 5 characters (2 for name)
     private Boolean checkIfValid(String message, String number, String email, String name) {
         if (message == null || message.length() < 5) {
             System.out.println("Message is too short");
@@ -64,11 +64,11 @@ public class FormHandlerServlet extends HttpServlet {
             return false;
         }
         if (email == null || email.length() < 5) {
-            System.out.println("Number is too small");
+            System.out.println("Email is too small");
             return false;
         }
-        if (name == null || name.length() < 5) {
-            System.out.println("Number is too small");
+        if (name == null || name.length() < 2) {
+            System.out.println("Name is too small");
             return false;
         }
 

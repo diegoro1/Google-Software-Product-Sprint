@@ -6,7 +6,8 @@ export default function ContactForm() {
     return (
         <div className="contact-wrapper">
             <h1>Send me a message</h1>
-            <form action="/form-handler" method="POST">
+            <iframe name="dummyframe" id="dummyframe" title="dummyframe"></iframe>
+            <form action="/form-handler" method="POST" target="dummyframe">
                 <Grid container justify="center" spacing={4} alignItems="center">
                     <Grid item xs={12} className="grid-item">
                         <input type="text" placeholder="name" className="input" name="name" />
